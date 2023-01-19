@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+html,body{
+    overflow-x:hidden;
+}
+.h44{
+    font-size: 13px;
+}
+/*topnav work start*/
+.section-padding{
+    padding: 3rem 0;
+}
+
+.hover-product{
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+    width: 32%;
+    background: white;
+    text-align: center;
+    padding: .7rem 1rem;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.main-product:hover .hover-product{
+    bottom: 5%;
+}
+.topnav{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding:10px 0;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.shipimg{
+    width: 30px;
+    height: 30px;
+}
+#simg{
+    margin-right: 8px;
+}
+
+
+/*under topnav css*/
+.undertopnavcontainer{
+
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-bottom: 1px solid lightgray;
+}
+.mainnavflex{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown:focus-within .dropdown-menu {
+    opacity:1;
+    transform: translate(0) scale(1);
+    visibility: visible;
+}
+.cusmargin{
+    margin-left: 10px;
+}
+.customimg{
+    width: 85px;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+
+.logoflex{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 13px;
+    padding:5px;
+
+}
+
+.logocontent{
+    margin-left: 5px;
+}
+.logocontent h4{
+    font-size: 12px;
+}
+.logocontent h5{
+    font-size: 12px;
+}
+.heartlogo{
+    height: 25px;
+    width: 45px;
+}
+.logoflex .bagshop{
+    margin-left: 25px;
+}
+/*undertopnav work end*/
+
+/*navbar work*/
+header a{
+    font-size: 12px;
+    font-weight: bold;
+}
+/*navbar work end*/
+
+/*sliderwork start*/
+
+#slider{
+    width:100%;
+    max-width: 95%;
+    margin-top: 30px;
+
+    height: 500px;
+    position:relative;
+    overflow:hidden;
+    border: 10px solid white;
+
+    margin-left: 50px;
+    margin-right:50px!important;
+
+
+}
+
+.slide{
+    /*width:100%;*/
+    /*display: none;*/
+    animation-name:fade;
+    animation-duration:1s;
+    position: relative;
+
+}
+.slide img{
+    width: 100%;
+}
+
+.ss-content{
+    position: absolute;
+    top:200px;
+    left:400px;
+}
+.ss-content .p1{
+    font-size: 36px;
+    font-family: 'Rock Salt', cursive;
+    color:lightpink;
+}
+.ss-content .v1{
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
+    border-bottom: 1px solid lightgray;
+}
+
+
+@keyframes fade{
+    from{opacity:0.5;}
+    to{opacity:1;}
+}
+
+.controls{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    padding:15px 10px;
+    border-radius:5px;
+
+}
+
+
+
+.controls:active{
+    color:grey;
+}
+
+#left-arrow{
+    left:10px;
+}
+
+#right-arrow{
+    right:10px;
+}
+
+#dots-con{
+
+    text-align:center;
+}
+.dot{
+    display:none;
+    background:grey;
+    padding:8px;
+    border-radius:50%;
+    margin:10px 5px;
+}
+
+/*sliderwork end*/
+
+
+
+
+
+
+
+
+
+
+
+/*banner work start*/
+.bannercontainer{
+    margin-top: 10px;
+}
+.contentbanner{
+    text-align: center;
+
+}
+.contentbanner h4{
+    ffont-family: 'Oswald', sans-serif;
+
+    font-size: 24px;
+}
+.contentbanner p{
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    color:lightgray;
+
+}
+.item1content{
+    position: absolute;
+    top:40%;
+    left:60%;
+}
+.item1content h1{
+    font-size: 26px;
+    font-family: 'Permanent Marker', cursive;
+}
+.item1content p{
+    font-size: 16px;
+
+    font-family: 'Indie Flower', cursive;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
+
+}
+.item1content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.item1content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.item2content{
+    position: absolute;
+    top:70%;
+    left:30%;
+
+
+}
+.item2content h1{
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.item2content p{
+    font-size: 16px;
+
+    font-family: 'Indie Flower', cursive;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
+
+}
+.item2content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.item2content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.item3content1{
+    position: absolute;
+    top:5%;
+    left:25%;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+.itm3content2{
+    position: absolute;
+    bottom:8%;
+    left:28%;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+    border-bottom: 1px solid lightgray;
+}
+
+.item4content{
+    position: absolute;
+    top:8%;
+    left:18%;
+}
+.item4content h1{
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+.item4content p{
+    font-size: 16px;
+
+    font-family: 'Indie Flower', cursive;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+
+
+}
+.item4content p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.item4content p:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.item5content1{
+    position: absolute;
+    top:8%;
+    left:28%;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+.item5content2{
+    position: absolute;
+    bottom:8%;
+    left:28%;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+    border-bottom: 1px solid lightgray;
+}
+
+.item6content1{
+    position: absolute;
+    top:28%;
+    left:25%;
+    font-size: 36px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.iem6content2{
+    position: absolute;
+    top:80%;
+    left:35%;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    border-bottom: 1px solid lightgray;
+}
+/*banner work end*/
+
+
+
+
+
+
+
+
+
+
+
+/*feature section work start*/
+.featuredivmain{
+    margin-top: 5px;
+}
+.featurework{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 248px;
+    padding: 8px;
+    margin-right: 184px;
+    margin-top: -14px;
+}
+.featurework h5{
+    font-size: 12px;
+    font-weight: bold;
+}
+.featurework h4{
+    font-size: 13px;
+
+}
+.featuredivline{
+    border-right: 2px solid lightgray;
+}
+
+/*feature section work end*/
+
+
+
+
+
+
+
+
+/*productsection work start*/
+
+
+
+.productdiv h5{
+    font-family: 'Padyakke Expanded One', cursive;
+    font-size: 12px;
+}
+.productdiv p{
+    font-family: 'Padyakke Expanded One', cursive;
+    color:lightgray;
+    font-size: 12px;
+}
+.productdiv #newprice{
+    color:black;
+}
+.productdiv .starlogo{
+    color:lightgray;
+    font-size: 10px;
+}
+.productdiv .discount{
+    position: absolute;
+    top: 1868px;
+    margin-left: 12px;
+    width: 40px;
+    height: 22px;
+    font-family: 'Explora', cursive;
+
+
+}
+/*productsection work end*/
+
+
+
+
+
+
+
+
+
+/*hero section work*/
+.herowork{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 150px;
+}
+.heromainsection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.heroimg{
+    height: 400px;
+
+}
+.herocontent{
+    background-color: lightgray;
+    text-align: center;
+
+}
+.herocontent11{
+    margin-top: 130px;
+}
+ .customh5{
+    font-size: 36px;
+     font-family: 'Rock Salt', cursive;
+}
+/*hero section work end*/
+
+/*product2section*/
+.discount1 {
+    position: absolute;
+    top: 14px;
+    width: 40px;
+    height: 22px;
+    font-family: 'Explora', cursive;
+    left: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*branding work start*/
+.brandigmain{
+    border-bottom: 1px solid lightgray;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-top:130px;
+    border-bottom: 1px solid lightgray;
+    border-top:1px solid lightgray;
+    height: 80px;
+
+}
+
+.branding{
+
+
+    margin-left: 460px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    margin-top:16px;
+
+}
+/*branding work end*/
+
+
+
+
+
+
+
+
+
+
+
+/*footer work start*/
+.footimg{
+    width: 70px;
+    height: 70px;
+}
+
+.footermaindiv{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-left: 60px;
+    margin-right: 60px;
+    border-bottom: 1px solid lightgray;
+    margin-top: 8px;
+}
+.footermaindiv a{
+    display: block;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 13px;
+    font-weight: 300;
+    color:gray;
+}
+.footermaindiv h4{
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.footermaindiv h5{
+    font-size: 12px;
+    font-family: 'Shadows Into Light', cursive;
+    color:gray;
+}
+
+.footerdiv2{
+    margin-top: 80px;
+}
+.footerdiv22{
+    margin-top: 15px;
+}
+.footerdiv4{
+    margin-top: 50px;
+}
+.footerextra{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:15px;
+    color:gray;
+}
+/*footer work end*/
+
+
+
+
